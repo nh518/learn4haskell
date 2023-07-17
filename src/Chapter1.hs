@@ -529,7 +529,7 @@ closestToZero x y = min (abs x) (abs y)
 Write a function that returns the middle number among three given numbers.
 
 >>> mid 3 1 2
-2
+1
 
 🕯 HINT: When checking multiple conditions, it is more convenient to use the
   language construct called "guards" instead of multiple nested 'if-then-else'
@@ -673,7 +673,7 @@ firstDigit n
           absn   = abs n
 
 
-{-a
+{-
 You did it! Now it is time to open a pull request with your changes
 and summon @vrom911 for the review!
 -}
