@@ -664,7 +664,7 @@ Implement a function that returns the first digit of a given number.
 You need to use recursion in this task. Feel free to return to it later, if you
 aren't ready for this boss yet!
 -}
-firstDigit :: Integer -> Integer
+firstDigit :: Int -> Int
 firstDigit n
     | absn < 10 = absn
     | result < 10 = result
