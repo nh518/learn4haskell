@@ -641,7 +641,7 @@ sumLast2 n = last1 + last2
       last2 = div (mod n 100) 10
 -}
 
-sumLast2 :: Integer -> Integer
+sumLast2 :: Int -> Int
 sumLast2 n = 
     let last1 = lastDigit n
         last2 = div (mod n 100) 10
