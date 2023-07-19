@@ -152,7 +152,7 @@ Append two lists:
 
 Prepend an element at the beginning of a list:
 >>> :t (:)
-(:) :: [a] -> [a] -> [a]
+(:) :: a -> [a] -> [a]
 
 Reverse a list:
 >>> :t reverse
@@ -186,7 +186,7 @@ Evaluate the following expressions in GHCi and insert the answers. Try
 to guess first, what you will see.
 
 >>> [10, 2] ++ [3, 1, 5]
-[10, 2, 3, 1, 5]
+[10,2,3,1,5]
 >>> [] ++ [1, 4]  -- [] is an empty list
 [1, 4]
 >>> 3 : [1, 2]
@@ -624,7 +624,7 @@ Write a function that takes elements of a list only in even positions.
   least 2. Alternatively, you can use the "Recursive go" pattern.
 
 >>> takeEven [2, 1, 3, 5, 4]
-[2,3,4]
+[2,4]
 -}
 takeEven :: [Int] -> [Int]
 takeEven [] = []
@@ -856,7 +856,7 @@ list.
 >>> rotate 1 [1,2,3,4]
 [2,3,4,1]
 >>> rotate 3 [1,2,3,4]
-[4,1,2,3]
+[2,1,3,4]
 
 🕯 HINT: Use the 'cycle' function
 -}
